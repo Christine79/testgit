@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+
+<p>
+  <strong>Name:</strong>
+  <%= @private_message.content %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @private_message.content2 %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @private_message.anonymous_author %>
+</p>
+
+
+<%= link_to 'Edit', edit_private_message_path(@private_message) %> |
+<%= link_to 'Back', private_messages_path %>
